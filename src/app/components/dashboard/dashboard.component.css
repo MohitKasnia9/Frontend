@@ -1,0 +1,144 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between the logo and logout button */
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 120px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+  /* .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  } */
+  h1 {
+    font-size: 36px;              /* Large font size */
+    font-weight: bold;            /* Bold text */
+    color: #2c3e50;               /* Dark color for text */
+    text-align: center;           /* Center the heading */
+    margin-top: 30px;             /* Space above the heading */
+    margin-bottom: 20px;          /* Space below the heading */
+    text-transform: uppercase;    /* Uppercase letters */
+    letter-spacing: 2px;          /* Space between letters */
+    font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  .logout-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: darkred;
+  }
+  
+  /* Dashboard Styles */
+  .dashboard-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing under navbar */
+  }
+  
+  .dashboard-container h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Updated Student Table Styles */
+  .student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for better aesthetics */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent content overflow on rounded corners */
+  }
+  
+  .student-table th,
+  .student-table td {
+    padding: 12px 15px; /* Add padding for better readability */
+    text-align: left; /* Align content to the left */
+  }
+  
+  .student-table th {
+    background-color: #3182ce; /* Blue header for a clean look */
+    color: #ffffff; /* White text for contrast */
+    font-weight: bold; /* Emphasize headers */
+    text-transform: uppercase; /* Uppercase for headers */
+    font-size: 14px; /* Smaller font for headers */
+  }
+  
+  .student-table td {
+    font-size: 14px;
+    color: #333333; /* Darker text for readability */
+  }
+  
+  /* Alternate row colors */
+  .student-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+  }
+  
+  .student-table tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+  }
+  
+  /* Hover effect for rows */
+  .student-table tr:hover {
+    background-color: #e2e8f0; /* Light blue on hover */
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Borders for the table */
+  .student-table th,
+  .student-table td {
+    border: 1px solid #e2e8f0; /* Subtle borders for a clean look */
+  }
+  
+  /* Button Styles */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .center-button {
+    background-color: #3182ce; /* Match table header blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .center-button:hover {
+    background-color: #2c5282; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
