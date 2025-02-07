@@ -71,7 +71,7 @@ export class SignupComponent {
     const confirmPassword = group.get('confirmPassword')?.value;
     return password === confirmPassword
       ? null
-      : { passwordsMismatch: [true,'passwordsMismatch']};
+      : { passwordsMismatch: true };
   }
 
   onUserSave() {
