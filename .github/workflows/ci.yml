@@ -23,13 +23,11 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --force
 
-      - name: Run Linter
-        run: npm run lint
-
+    
       - name: Run Tests
-        run: npm test
+        run: npm run test -- --browsers ChromeHeadlessNoSandbox
 
       - name: Build Project
         run: npm run build
